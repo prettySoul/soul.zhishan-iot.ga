@@ -1,0 +1,148 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+HTML{
+	background:url(../img/2222.jpg)
+}
+#musicPlayer{
+	position:relative;
+	margin:60px auto;
+	width:800px;
+	height:500px;
+	
+}
+
+.img{
+	float:left;
+	width:75%;
+	height:90%;
+	transition:transform 1s;
+	-webkit-transition:transform 1s ;
+	-moz-transition:transform 1s ;
+	-ms-transition:transform 1s ;
+	-o-transition:transform 1s ;
+	
+}
+
+.img:hover{
+	transform:rotate3d(60,60,60,360deg);
+	-webkit-transform:rotate3d(60,60,60,360deg);
+	-moz-transform:rotate3d(60,60,60,360deg);
+	-ms-transform:rotate3d(60,60,60,360deg);
+	-o-transform:rotate3d(60,60,60,360deg);
+}
+
+.img img{
+	width:100%;
+	height:100%;
+}
+
+.lyric{
+	float:right;
+	width:25%;
+	height:90%;
+	background:rgba(0,0,0,.8);
+}
+
+.lyric ul{
+	position:relative;
+	margin:20px auto;
+	list-style:none;
+	width:57%;
+	height:22%;
+}
+.lyric ul .lijia img{
+	border-radius:50%;
+	box-shadow:0 0 15px #fff;
+	animation:run 10s linear infinite;
+	-webkit-animation:run 10s linear infinite;
+	-moz-animation:run 10s linear infinite;
+	-ms-animation:run 10s linear infinite;
+	-o-animation:run 10s linear infinite;
+}
+
+@-webkit-keyframes run{
+	From{transform:rotate(0deg);}
+    To{transform:rotate(360deg);}
+}
+@-moz-keyframes run{
+	From{transform:rotate(0deg);}
+    To{transform:rotate(360deg);}
+}
+@-ms-keyframes run{
+	From{transform:rotate(0deg);}
+    To{transform:rotate(360deg);}
+}
+@-o-keyframes run{
+	From{transform:rotate(0deg);}
+    To{transform:rotate(360deg);}
+}
+
+
+
+.lyric ul .songName{
+	text-align:center;
+	line-height:40px;
+	color:white;
+	border-bottom:1px solid white;
+}
+
+.lyric .my_lyrics{
+	margin:70px 0;
+	width:100%;
+	height:250px;
+	text-align:center;
+	color:white;
+	font-size:12px;	
+	line-height:26px;
+	overflow-y:auto
+}
+.my_lyrics::-webkit-scrollbar{width:5px;background:rgba(0,0,0,.8);}
+.my_lyrics::-webkit-scrollbar-button{ background-colorrgba(0,0,0,.8);}
+.my_lyrics::-webkit-scrollbar-thumb{ background:rgba(0,0,0,.8);}
+
+.my_lyrics::-moz-scrollbar{width:5px;background:rgba(0,0,0,.8);}
+.my_lyrics::-moz-scrollbar-button{ background-colorrgba(0,0,0,.8);}
+.my_lyrics::-moz-scrollbar-thumb{ background:rgba(0,0,0,.8);}
+
+.my_lyrics::-ms-scrollbar{width:5px;background:rgba(0,0,0,.8);}
+.my_lyrics::-ms-scrollbar-button{ background-colorrgba(0,0,0,.8);}
+.my_lyrics::-ms-scrollbar-thumb{ background:rgba(0,0,0,.8);}
+
+.my_lyrics::-o-scrollbar{width:5px;background:rgba(0,0,0,.8);}
+.my_lyrics::-o-scrollbar-button{ background-colorrgba(0,0,0,.8);}
+.my_lyrics::-o-scrollbar-thumb{ background:rgba(0,0,0,.8);}
+
+.color{
+	color:#56ff28;
+	/*font-size:15px;*/
+}
+
+.footer{
+	float:left;/*正确的做法，清除浮动*/
+	width:100%;
+	height:10%;
+	background:rgba(0,0,0,.5);
+	
+}
+
+.footer #play{
+	margin:5px 350px;
+	width:40px;
+	height:40px;
+	border-radius:40%;
+}
+.footer #play:hover{
+	border:5px solid #509a2d;
+}
+.footer #play:active{
+	border:5px solid #94f90e;
+}
+
+.footer #play img{
+	width:100%;
+	height:100%;
+	border-radius:35%;
+}
